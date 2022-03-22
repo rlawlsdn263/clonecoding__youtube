@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+:root {
+  /* Color */
+  --color-white: #ffffff;
+  --color-white-bg: #f9f9f9;
+  --color-black: #030303;
+  --color-red: #ff0000;
+  --color-skyblue: #7fa2cd;
+
+  /* Font Size */
+  --font-micro: 10px;
+  --font-small: 12px;
+  --font-regular: 14px;
+  --font-large: 18px;
+  --font-larger: 20px;
+
+  /* space */
+  --space-small: 5px;
+  --space-regular: 10px;
+  --space-large: 15px;
+}
+
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+  background-color: orange;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+i {
+  font-size: var(--font-large);
+  color: var(--color-black);
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+/* Navigation Bar */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-white);
+
+  padding: 10px 20px;
+}
+
+.menuBtn {
+  margin-right: var(--space-large);
+}
+
+.logo i {
+  font-size: larger;
+  color: var(--color-red);
+}
+
+.logo span {
+  font-size: large;
+}
+
+.navbar__center {
+  display: flex;
+  align-items: center;
+}
+
+.searchBar {
+  width: 350px;
+  height: 30px;
+  padding: 0 var(--space-regular);
+  border: 1px solid var(--color-black);
+  border-radius: 0;
+}
+
+.searchBar:focus {
+  outline-style: solid;
+  outline-color: var(--color-skyblue);
+}
+
+.search {
+  border: 1px solid var(--color-black);
+  border-left: none;
+  width: 50px;
+  height: 30px;
+
+  margin-right: var(--space-large);
+}
+
+.navbar__right {
+  display: flex;
+  align-items: center;
+}
+
+.alarm {
+  margin-right: var(--space-large);
+}
+
+.badge {
+  display: inline-block;
+  color: var(--color-white);
+  position: absolute;
+  top: 10px;
+  right: 55px;
+
+  border-radius: 50%;
+  border: 1px solid var(--color-white);
+  font-size: var(--font-micro);
+
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+
+  background-color: var(--color-red);
+}
+
+.profile__img {
+  border-radius: 50%;
+}
