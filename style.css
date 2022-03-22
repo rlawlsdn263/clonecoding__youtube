@@ -46,6 +46,7 @@ i {
 button {
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 /* Navigation Bar */
@@ -127,4 +128,13 @@ button {
 
 .profile__img {
   border-radius: 50%;
+}
+
+/* Video Player */
+#player {
+  display: flex;
+  justify-content: center;
+
+  background-color: var(--color-white-bg);
+  padding: 20px 0;
 }
